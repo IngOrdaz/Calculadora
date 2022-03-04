@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00BCD4"
     tools:context=".MainActivity">
 
     <EditText
@@ -11,199 +12,259 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="number"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
         android:text="1"
-        app:layout_constraintTop_toBottomOf="@id/button4"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/button0"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/button2"/>
+        app:layout_constraintRight_toLeftOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@id/button4" />
+
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
         android:text="2"
-        app:layout_constraintTop_toBottomOf="@id/button5"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonDecimal"
         app:layout_constraintLeft_toRightOf="@id/button1"
         app:layout_constraintRight_toLeftOf="@id/button3"
-        />
+        app:layout_constraintTop_toBottomOf="@id/button5" />
+
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
         android:text="3"
-        app:layout_constraintTop_toBottomOf="@id/button6"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonDecimal"
         app:layout_constraintLeft_toRightOf="@id/button2"
         app:layout_constraintRight_toLeftOf="@id/buttonSum"
-        />
+        app:layout_constraintTop_toBottomOf="@id/button6" />
+
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
         android:text="4"
-        app:layout_constraintTop_toBottomOf="@id/button7"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/button1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/button5"
-        app:layout_constraintBottom_toTopOf="@id/button1"/>
+        app:layout_constraintTop_toBottomOf="@id/button7" />
+
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
         android:text="5"
-        app:layout_constraintTop_toBottomOf="@id/button8"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/button2"
         app:layout_constraintLeft_toRightOf="@id/button6"
         app:layout_constraintRight_toLeftOf="@id/button4"
-        app:layout_constraintBottom_toTopOf="@id/button2"
-        />
+        app:layout_constraintTop_toBottomOf="@id/button8" />
+
     <Button
         android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
         android:text="6"
-        app:layout_constraintTop_toBottomOf="@id/button9"
-        app:layout_constraintRight_toLeftOf="@id/buttonSubstraction"
-        app:layout_constraintLeft_toRightOf="@id/button5"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@id/button3"
-        />
+        app:layout_constraintLeft_toRightOf="@id/button5"
+        app:layout_constraintRight_toLeftOf="@id/buttonSubstraction"
+        app:layout_constraintTop_toBottomOf="@id/button9" />
+
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
         android:text="7"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonAC"
-        app:layout_constraintRight_toLeftOf="@id/button8"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@id/button4"
-        />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/button8"
+        app:layout_constraintTop_toBottomOf="@id/buttonAC" />
+
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
         android:text="8"
-        app:layout_constraintTop_toBottomOf="@id/buttonDel"
-        app:layout_constraintRight_toLeftOf="@id/button9"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/button5"
         app:layout_constraintLeft_toRightOf="@id/button7"
-        app:layout_constraintBottom_toTopOf="@id/button5"/>
+        app:layout_constraintRight_toLeftOf="@id/button9"
+        app:layout_constraintTop_toBottomOf="@id/buttonDel" />
+
     <Button
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
         android:text="9"
-        app:layout_constraintTop_toBottomOf="@id/buttonPercent"
-        app:layout_constraintRight_toLeftOf="@id/buttonMultiplication"
-        app:layout_constraintLeft_toRightOf="@id/button8"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@id/button6"
-        />
+        app:layout_constraintLeft_toRightOf="@id/button8"
+        app:layout_constraintRight_toLeftOf="@id/buttonMultiplication"
+        app:layout_constraintTop_toBottomOf="@id/buttonPercent" />
+
     <Button
         android:id="@+id/button0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_gray"
         android:text="0"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button2"
-        app:layout_constraintRight_toLeftOf="@id/buttonDecimal"/>
+        app:layout_constraintRight_toLeftOf="@id/buttonDecimal"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
 
     <Button
         android:id="@+id/buttonAC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
         android:text="AC"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/buttonDel"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
 
         />
+
     <Button
         android:id="@+id/buttonDel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_gray"
         android:text="DEL"
-        app:layout_constraintTop_toBottomOf="@id/editTextNumber"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/button8"
         app:layout_constraintLeft_toRightOf="@id/buttonAC"
         app:layout_constraintRight_toLeftOf="@id/buttonPercent"
-        app:layout_constraintBottom_toTopOf="@id/button8"
-        />
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber" />
+
     <Button
         android:id="@+id/buttonPercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text= "%"
-        app:layout_constraintTop_toBottomOf="@id/editTextNumber"
+        android:backgroundTint="@color/dark_gray"
+        android:text="%"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonMultiplication"
         app:layout_constraintLeft_toRightOf="@id/buttonDel"
         app:layout_constraintRight_toLeftOf="@id/buttonDivition"
-        app:layout_constraintBottom_toTopOf="@id/buttonMultiplication"
-        />
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber" />
+
     <Button
         android:id="@+id/buttonDivition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text= "÷"
+        android:backgroundTint="@color/orange"
+        android:text="÷"
+        android:textColor="@color/dark_red"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonMultiplication"
+        app:layout_constraintLeft_toRightOf="@id/buttonPercent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/editTextNumber"
-        app:layout_constraintLeft_toRightOf="@id/buttonPercent"
-        app:layout_constraintBottom_toTopOf="@id/buttonMultiplication"
 
         />
+
     <Button
         android:id="@+id/buttonMultiplication"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="x"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/button9"
-        app:layout_constraintTop_toBottomOf="@id/buttonDivition"
+        android:backgroundTint="@color/orange"
+        android:text="*"
+        android:textColor="@color/dark_red"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@id/buttonSubstraction"
-        />
+        app:layout_constraintLeft_toRightOf="@id/button9"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonDivition" />
+
     <Button
         android:id="@+id/buttonSubstraction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
         android:text="-"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonMultiplication"
-        app:layout_constraintLeft_toRightOf="@id/button6"
+        android:textColor="@color/dark_red"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@id/buttonSum"
-        />
+        app:layout_constraintLeft_toRightOf="@id/button6"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonMultiplication" />
+
     <Button
         android:id="@+id/buttonSum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
         android:text="+"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonSubstraction"
+        android:textColor="@color/dark_red"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/buttonEquals"
         app:layout_constraintLeft_toRightOf="@id/button3"
-        />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSubstraction" />
+
     <Button
         android:id="@+id/buttonDecimal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
         android:text="."
-        app:layout_constraintTop_toBottomOf="@id/button2"
+        android:textColor="@color/dark_red"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/button0"
         app:layout_constraintRight_toLeftOf="@id/buttonEquals"
-        />
+        app:layout_constraintTop_toBottomOf="@id/button2" />
+
     <Button
         android:id="@+id/buttonEquals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text= "="
-        app:layout_constraintTop_toBottomOf="@id/button2"
+        android:backgroundTint="@color/green"
+        android:text="="
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/buttonDecimal"
-        app:layout_constraintRight_toRightOf="parent"/>
-
-
-
-
-
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonSum" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

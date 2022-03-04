@@ -10,5 +10,10 @@
     <color name="dark_gray">#FF555555</color>
     <color name="light_gray">#FF888888</color>
     <color name="orange">#FFFF8800</color>
+    <color name="green">#64D369</color>
+    <color name="red">#EA0808</color>
+
+    <color name="dark_red">#8E0000</color>
+
 
 </resources>
