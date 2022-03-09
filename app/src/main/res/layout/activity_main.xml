@@ -210,7 +210,8 @@
         app:layout_constraintBottom_toTopOf="@id/buttonMultiplication"
         app:layout_constraintLeft_toRightOf="@id/buttonPercent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@id/editTextNumber"
+        android:onClick="getOperator"/>
 
     <Button
         android:id="@+id/buttonMultiplication"
@@ -223,7 +224,8 @@
         app:layout_constraintBottom_toTopOf="@id/buttonSubstraction"
         app:layout_constraintLeft_toRightOf="@id/button9"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonDivition" />
+        app:layout_constraintTop_toBottomOf="@id/buttonDivition"
+        android:onClick="getOperator"/>
 
     <Button
         android:id="@+id/buttonSubstraction"
@@ -236,7 +238,8 @@
         app:layout_constraintBottom_toTopOf="@id/buttonSum"
         app:layout_constraintLeft_toRightOf="@id/button6"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonMultiplication" />
+        app:layout_constraintTop_toBottomOf="@id/buttonMultiplication"
+        android:onClick="getOperator"/>
 
     <Button
         android:id="@+id/buttonSum"
@@ -249,7 +252,8 @@
         app:layout_constraintBottom_toTopOf="@id/buttonEquals"
         app:layout_constraintLeft_toRightOf="@id/button3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/buttonSubstraction" />
+        app:layout_constraintTop_toBottomOf="@id/buttonSubstraction"
+        android:onClick="getOperator"/>
 
     <Button
         android:id="@+id/buttonDecimal"

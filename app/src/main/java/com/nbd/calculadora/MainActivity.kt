@@ -14,6 +14,9 @@ class MainActivity : AppCompatActivity() {
 
      */
     private lateinit var binding:ActivityMainBinding
+    var  firstvalue: Double = 0.0
+    var operator: Char ='x'
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -29,6 +32,67 @@ class MainActivity : AppCompatActivity() {
         binding.buttonDel.setOnClickListener{
             binding.editTextNumber.setText(binding.editTextNumber.text.dropLast(1))
         }
+        binding.buttonEquals.setOnClickListener {
+            when(operator){
+                '+' ->
+                {
+                    binding.editTextNumber.setText("${firstvalue+binding.editTextNumber.text.toString().toDouble()}")
+                }
+                '-' ->
+                {
+                    binding.editTextNumber.setText("${firstvalue-binding.editTextNumber.text.toString().toDouble()}")
+                }
+                '*' ->
+                {
+                    binding.editTextNumber.setText("${firstvalue*binding.editTextNumber.text.toString().toDouble()}")
+                }
+                '÷' ->
+                {
+                    binding.editTextNumber.setText("${firstvalue/binding.editTextNumber.text.toString().toDouble()}")
+                }
+
+                else-> {binding.editTextNumber.setText("SyntaxError xD")}
+            }
+        }
+        binding.buttonPercent.setOnClickListener {
+            binding.editTextNumber.setText(percent(operator))
+        }
+
+    }
+    fun getOperator(view: View){
+        val button=view as Button
+
+        operator= button.text.get(0)
+   /*     operator = when(button.id){
+            binding.buttonSum.id -> {'+'}
+            binding.buttonSubstraction.id -> {'-'}
+            binding.buttonMultiplication.id ->{'x'}
+            binding.buttonDivition.id ->{'/'}
+
+            else ->{'0'}
+        }
+    */
+        firstvalue=binding.editTextNumber.text.toString().toDouble() //traemos lo de pantalla -> text ->double
+        binding.editTextNumber.text.clear()
+    }
+    fun percent(operatorToUse:Char):String{
+        when(operatorToUse){
+            '+'-> {
+                return "${firstvalue + (firstvalue*binding.editTextNumber.text.toString().toDouble()/100)}"
+            }
+            '-'-> {
+                return "${firstvalue - (firstvalue*binding.editTextNumber.text.toString().toDouble()/100)}"
+            }
+            '0' ->{
+                return "${binding.editTextNumber.text.toString().toDouble()/100}"
+            }
+            else -> {
+                return "SyntaxError xD"
+            }
+        }
+
+        operator = '0'
+        firstvalue=0.0
     }
 
     fun numberButtonClicked(view: View){
